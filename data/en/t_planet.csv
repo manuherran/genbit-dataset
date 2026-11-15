@@ -1,0 +1,15 @@
+id,name,star_system,body_type,distance_ly,gravity_g,population,habitable
+1,Earth,Sol,Rocky planet,0.00,1.00,9800000000,1
+2,Moon,Sol,Moon,0.00,0.17,2400000,1
+3,Mars,Sol,Rocky planet,0.00,0.38,48000000,1
+4,Europa,Sol,Icy moon,0.00,0.13,310000,0
+5,Titan,Sol,Icy moon,0.00,0.14,1150000,0
+6,Ganymede,Sol,Icy moon,0.00,0.15,640000,0
+7,Ceres,Sol,Dwarf planet,0.00,0.03,95000,0
+8,Lagrange L5 Station,Sol,Orbital station,0.00,1.00,72000,1
+9,Proxima b,Alfa Centauri,Rocky planet,4.24,1.10,3200000,1
+10,TRAPPIST-1e,TRAPPIST-1,Ocean planet,40.66,0.93,410000,1
+11,Kepler-442b,Kepler-442,Super-Earth,1206.00,1.30,0,1
+12,Tau Ceti f,Tau Ceti,Super-Earth,11.91,1.70,18000,0
+13,Gliese 667 Cc,Gliese 667,Super-Earth,23.62,1.50,5600,0
+14,New Aurora,Kepler-186,Rocky planet,582.20,0.89,0,1

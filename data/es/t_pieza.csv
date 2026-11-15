@@ -1,0 +1,27 @@
+id,nombre,material,id_proveedor,coste
+1,Cristal de cuarzo cuántico,Cuarzo,3,85.00
+2,Bobina superconductora,Niobio-titanio,3,240.00
+3,Condensador de taquiones,Exótico,3,3900.00
+4,Qubit topológico,Semiconductor,3,250.00
+5,Trampa de iones,Silicio,3,650.00
+6,Chip criogénico,Silicio,1,310.00
+7,Carcasa de titanio,Titanio,5,45.00
+8,Lente de metamaterial,Metamaterial,2,190.00
+9,Batería de fusión fría,Paladio,6,520.00
+10,Emisor de plasma,Tungsteno,6,410.00
+11,Muelle de grafeno,Grafeno,7,12.00
+12,Cargador de piñas,Madera reciclada,5,6.50
+13,Nitrógeno líquido (litro),Nitrógeno,1,1.20
+14,Vector viral sintético,Biológico,4,95.00
+15,Enzima Cas-Ω,Biológico,4,60.00
+16,Cultivo de células madre,Biológico,4,480.00
+17,Biotinta,Biológico,8,220.00
+18,Nanoensamblador,Carbono,9,0.35
+19,Electrodo neuronal,Platino-iridio,10,140.00
+20,Sensor fotónico de neuronas,Fotónico,10,360.00
+21,Membrana de grafeno,Grafeno,7,60.00
+22,Esporas de musgo,Biológico,8,0.10
+23,Generador de campo gravitatorio,Exótico,6,2700.00
+24,Antena de entrelazamiento,Semiconductor,3,18.00
+25,Tornillo de unobtanio,Unobtanio,5,9999.00
+26,Núcleo de antimateria (1 ng),Antimateria,,15000.00

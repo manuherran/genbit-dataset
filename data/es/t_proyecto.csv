@@ -1,0 +1,16 @@
+id,nombre,area,id_empresa,id_responsable,fecha_inicio,fecha_fin,presupuesto,estado
+1,Conteo de neuronas,Neurociencia,11,6,2179-01-10,,4200000.00,Activo
+2,Reprogramación celular,Genética,14,4,2177-05-01,,12500000.00,Activo
+3,Teletransporte cuántico,Física cuántica,6,5,2172-02-14,2184-12-20,88000000.00,Finalizado
+4,Edición genética CRISPR-Ω,Genética,2,4,2174-09-09,2182-06-30,23000000.00,Finalizado
+5,Terraformación de Marte,Astrobiología,15,15,2165-01-01,,950000000.00,Activo
+6,Ordenador cuántico topológico,Física cuántica,8,12,2178-03-03,,61000000.00,Activo
+7,Motor de curvatura,Astrofísica,16,8,2180-07-07,,420000000.00,En pausa
+8,Fotosíntesis artificial,Bioingeniería,5,15,2176-04-22,2183-04-22,9700000.00,Finalizado
+9,Criopreservación humana,Medicina,4,14,2175-11-11,,31000000.00,Activo
+10,Regeneración telomérica,Medicina,10,14,2181-02-02,,18400000.00,Activo
+11,Mapa del conectoma,Neurociencia,9,6,2183-06-01,,7300000.00,Activo
+12,Atlas de agujeros de gusano,Astrofísica,17,18,2182-01-01,,140000000.00,Activo
+13,Reducción del sufrimiento salvaje,Ética,5,9,2184-03-15,,2100000.00,Activo
+14,Xenolingüística,Neurociencia,7,,2189-01-01,,3000000.00,Planificado
+15,Tostadora de antimateria,Energía,3,5,2181-01-01,2181-03-01,500000.00,Cancelado

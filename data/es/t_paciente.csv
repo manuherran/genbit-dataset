@@ -1,0 +1,21 @@
+id,nombre,apellidos,fecha_nacimiento,especie,grupo_sanguineo,id_planeta,id_proyecto,fecha_ingreso,estado
+1,Julio,Cabrera,2121-05-02,Humano,0+,1,9,2180-01-12,Criopreservado
+2,Lucius,Caviola,2156-09-14,Humano,A+,1,1,2182-03-03,En tratamiento
+3,Bruno,Contestabile,2140-02-28,Humano,B-,9,10,2182-07-19,En tratamiento
+4,Oscar,Huerta,2149-12-01,Humano,0-,1,2,2181-11-11,Observación
+5,Michael,Dello-Iacovo,2160-06-06,Humano,AB+,3,1,2183-02-02,Alta
+6,Michael Edward,Johnson,2158-03-17,Humano,A-,1,11,2184-08-08,En tratamiento
+7,Robert,Daoust,2130-10-10,Humano,0+,2,9,2179-12-24,Criopreservado
+8,Lukas,Gloor,2162-01-21,Humano,B+,8,10,2185-05-05,En tratamiento
+9,Andrés,Gómez-Emilsson,2161-07-30,Humano,A+,1,1,2183-09-09,Observación
+10,Nely,Watson,2155-04-04,Humano,AB-,3,2,2184-01-15,En tratamiento
+11,Oomu,Paal,2090-01-01,Cefalópodo europano,,4,2,2186-06-30,Observación
+12,Teodora,Ilić,2170-11-11,Humano,0+,3,10,2186-02-27,En tratamiento
+13,Raúl,Benítez,2148-08-08,Humano,A+,1,9,2185-12-12,Criopreservado
+14,Grommk,Ul,2105-05-05,Silicoide,,7,2,2187-01-20,Observación
+15,Sofía,Lindahl,2172-02-02,Humano,B+,9,10,2187-03-14,En tratamiento
+16,Amara,Nwosu,2166-06-16,Humano,0-,3,1,2187-05-05,Alta
+17,Haruto,Mori,2159-09-19,Humano,A-,1,11,2187-08-01,En tratamiento
+18,Elif,Kaya,2164-12-12,Humano,AB+,8,,2188-01-10,Observación
+19,Krrr'tik,,2140-04-04,Insectoide de Tau Ceti,,12,2,2188-02-29,En tratamiento
+20,Bea,Montalbán,2175-07-07,Humano,0+,1,10,2188-04-04,En tratamiento

@@ -1,0 +1,22 @@
+id,nombre,apellidos,email,puesto,departamento,id_oficina,id_jefe,fecha_alta,salario
+1,Thomas,Matzinger,ThomasMatzinger@genbit.com,Director general,Dirección,1,,2160-01-15,480000.00
+2,Olé,Martínez Möen,OleMartinezMoen@genbit.com,Dirección científica,Dirección,1,1,2161-03-01,390000.00
+3,David,Peace,DavidPeace@genbit.com,Director comercial,Ventas,1,1,2163-07-12,350000.00
+4,Tobias,Lenaert,TobiasLenaert@genbit.com,Genetista sénior,Genética,3,2,2165-02-20,210000.00
+5,Jonathan,Laighton,JonathanLaighton@genbit.com,Físico cuántico,Física cuántica,7,2,2166-09-05,205000.00
+6,Jamie,Maierfeld,JamieMaierfeld@genbit.com,Investigador/a en neurociencia,Neurociencia,12,2,2168-04-18,198000.00
+7,Peter,Singers,PeterSingers@genbit.com,Responsable de ética,Ética,1,1,2162-11-30,260000.00
+8,Michael,St. Yulés,MichaelStYules@genbit.com,Ingeniero de propulsión,Ingeniería,17,2,2169-06-01,185000.00
+9,Brian,Thomasik,BrianThomasik@genbit.com,Analista de sufrimiento salvaje,Ética,1,7,2170-01-10,142000.00
+10,Stijn,Bruwèrs,StijnBruwers@genbit.com,Vendedor interplanetario,Ventas,19,3,2171-08-22,98000.00
+11,Mark,Spark,MarkSpark@genbit.com,Vendedor interplanetario,Ventas,3,3,2172-03-14,96000.00
+12,Ada,Quintero,AdaQuintero@genbit.com,Ingeniera de qubits,Física cuántica,9,5,2174-05-02,154000.00
+13,Yuki,Tanabe,YukiTanabe@genbit.com,Bioinformática,Genética,2,4,2175-10-19,131000.00
+14,Nia,Okonkwo,NiaOkonkwo@genbit.com,Médica de ensayos clínicos,Medicina,5,2,2173-12-01,176000.00
+15,Rafael,Domínguez Sol,RafaelDominguezSol@genbit.com,Terraformador,Terraformación,6,2,2176-02-27,127000.00
+16,Lena,Voss,LenaVoss@genbit.com,Vendedora interplanetaria,Ventas,2,3,2177-07-07,92000.00
+17,Kai,Moreno,KaiMoreno@genbit.com,Técnico de criogenia,Medicina,5,14,2178-01-03,74000.00
+18,Priya,Raman,PriyaRaman@genbit.com,Astrofísica,Astrofísica,18,2,2178-09-15,149000.00
+19,Zeta-7,,Zeta7@genbit.com,Asistente de laboratorio sintético,Genética,3,4,2180-04-01,0.00
+20,Ilse,Brandt,IlseBrandt@genbit.com,Vendedora interplanetaria,Ventas,20,3,2181-07-10,88000.00
+21,Omar,Haddad,OmarHaddad@genbit.com,Becario de física,Física cuántica,,5,2186-09-01,31000.00

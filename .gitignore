@@ -1,0 +1,6 @@
+# Borradores originales (no se publican)
+GenBit Dataset ES/
+GenBit Dataset EN/
+__pycache__/
+*.pyc
+.claude/

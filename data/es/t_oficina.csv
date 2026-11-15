@@ -1,0 +1,21 @@
+id,nombre,id_empresa,id_planeta,ciudad,capacidad,fecha_apertura
+1,Sede central,1,1,Ginebra,4000,2142-03-01
+2,Laboratorio orbital,1,8,Anillo B,350,2158-06-15
+3,Campus Olympus,2,3,Olympus Mons,900,2152-01-10
+4,Planta de antimateria,3,2,Cráter Shackleton,600,2150-09-20
+5,Clínica criogénica,4,1,Reikiavik,220,2156-02-02
+6,Invernadero Valles,5,3,Valles Marineris,180,2161-04-30
+7,Nodo cuántico,6,1,Tokio,1500,2148-11-11
+8,Observatorio de datos,7,8,Anillo C,120,2164-07-07
+9,Laboratorio de espín,8,1,Zúrich,400,2140-05-05
+10,Estación de imagen,9,8,Anillo A,160,2167-03-03
+11,Biobanco Próxima,10,9,Puerto Centauri,90,2172-08-18
+12,Instituto de resonancia,11,1,Barcelona,140,2158-10-01
+13,Fábrica de replicadores,12,7,Occator,1300,2153-12-12
+14,Reactor Kraken,13,5,Kraken Mare,700,2146-01-20
+15,Laboratorio de ribosomas,14,3,Ciudad Bradbury,210,2169-02-14
+16,Base oceánica,15,4,Conamara Chaos,260,2162-06-21
+17,Astillero taquiónico,16,2,Base Armstrong,800,2162-09-09
+18,Terminal de agujeros de gusano,17,9,Puerto Centauri,2500,2171-01-01
+19,Oficina de ventas Ganímedes,1,6,Nueva Galilea,45,2175-05-25
+20,Puesto avanzado TRAPPIST,1,10,Arrecife Uno,30,2181-07-04

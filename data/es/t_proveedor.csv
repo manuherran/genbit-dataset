@@ -1,0 +1,11 @@
+id,nombre,apellidos,razon_social,especialidad,id_planeta,valoracion,email
+1,Jonathan,Byrch,Byrch Cryogenics Ltd.,Criogenia,1,4.6,jbyrch@byrchcryo.com
+2,Axelle,Playdust-Brâure,Poussière d'Étoiles SARL,Metamateriales,1,4.1,axelle@poussiere.fr
+3,Ian,Wilkinson,Wilkinson Quantum Parts,Componentes cuánticos,8,4.8,ian@wqp.st
+4,Catia,Fairia,Fairia Biologicals,Reactivos biológicos,3,3.9,catia@fairiabio.mr
+5,Dorothea,Krenz,Ceres Mining Collective,Minería de asteroides,7,3.5,dkrenz@ceresmining.coop
+6,Oluwaseun,Adeyemi,Adeyemi Plasma Works,Plasma y energía,5,4.3,seun@plasmaworks.tt
+7,Mara,Lindgren,Graphene Gardens,Grafeno,2,4.0,mara@graphenegardens.mn
+8,Xith,Ul-Morrow,Tau Ceti Hive Supplies,Bioingeniería,12,2.7,
+9,Pedro,Almagro,Almagro Nanosistemas,Nanotecnología,1,4.5,pedro@almagronano.es
+10,Sven,Haraldsen,Haraldsen Neurolinks,Neurotecnología,1,4.2,sven@neurolinks.no

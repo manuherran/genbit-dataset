@@ -1,0 +1,16 @@
+id,first_name,last_name,employee_id,company_id,shares,investment_date
+1,Paul,Yngraham,,1,120000,2170-04-01
+2,Jaime,Woodhouse,,6,45000,2172-06-15
+3,Tobias,Bawmann,,15,30000,2175-09-09
+4,Klat,Ros Kirdan,,17,88000,2176-02-20
+5,Iain,Wilkinson,,12,15000,2178-11-30
+6,Thomas,Matzinger,1,1,280000,2160-01-15
+7,Olé,Martínez Möen,2,1,120000,2161-03-01
+8,David,Peace,3,1,30000,2164-01-01
+9,Peter,Singers,7,5,25000,2165-05-05
+10,Jamie,Maierfeld,6,11,8800,2170-07-07
+11,Ada,Quintero,12,8,5500,2179-03-03
+12,Brian,Thomasik,9,5,12000,2176-08-08
+13,Zorblax,Qin,,12,400,2186-01-01
+14,Oomu,Paal,,15,13000,2186-06-30
+15,Marina,Okafor,,13,2500,2187-02-02

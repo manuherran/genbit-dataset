@@ -1,0 +1,31 @@
+id,first_name,last_name,species,email,planet_id,company_id,signup_date,tier
+1,Simon,Knutsön,Human,simon.knutson@orbitmail.se,1,,2180-02-11,Gold
+2,Magnus,Winding,Human,mwinding@marsnet.mr,3,15,2180-05-30,Platinum
+3,Jean-Christophe,Laurenbaum,Human,jc.laurenbaum@lunacom.mn,2,,2181-01-19,Silver
+4,Axelle,Playoust-Brâure,Human,axelle.pb@orbitmail.fr,1,5,2181-03-03,Gold
+5,Jack,Rese,Human,,8,,2181-06-21,Bronze
+6,Suzan,Schnëider,Human,suzan.schneider@orbitmail.de,1,,2181-11-08,Silver
+7,Ronald,Änderson,Human,ronald.anderson@titan.net,5,13,2182-01-14,Platinum
+8,Tobias,Bauman,Human,tobias.bauman@orbitmail.de,1,,2182-04-02,Bronze
+9,Vlastimill,Vohánka,Human,vlasta@ceres.coop,7,12,2182-07-27,Gold
+10,Oliver,Bertrand,Human,oliver.bertrand@proxima.ac,9,10,2182-10-10,Silver
+11,Seraphine,Duval,Human,seraphine.duval@orbitmail.fr,1,,2183-01-05,Bronze
+12,Kwame,Asante,Human,kwame.asante@lagrange.st,8,7,2183-02-17,Gold
+13,Mei Lin,Zhao,Human,meilin.zhao@marsnet.mr,3,2,2183-04-22,Platinum
+14,Lucía,Ferrer,Human,lucia.ferrer@orbitmail.es,1,,2183-06-09,Silver
+15,Dmitri,Volkov,Human,d.volkov@ganymede.gal,6,,2183-08-30,Bronze
+16,Hugo,Lindqvist,Human,hugo.lindqvist@orbitmail.se,1,8,2183-11-12,Gold
+17,Fátima Zahra,Benali,Human,fz.benali@lunacom.mn,2,3,2184-01-25,Silver
+18,Tomás,Iriarte,Human,,3,,2184-03-14,Bronze
+19,Ingrid,Solberg,Human,ingrid.solberg@europa.ice,4,15,2184-05-05,Gold
+20,Kenji,Arakawa,Human,kenji.arakawa@orbitmail.jp,1,6,2184-07-19,Platinum
+21,Valentina,Greco,Human,valentina.greco@titan.net,5,,2184-09-02,Silver
+22,Zorblax,Qin,Silicoid,zorblax@ceres.coop,7,,2185-01-30,Gold
+23,Vael,Thorassi,Tau Cetian insectoid,vael.thorassi@tauceti.hive,12,,2185-03-11,Silver
+24,Krrr'tik,,Tau Cetian insectoid,,12,,2185-06-06,Bronze
+25,Oomu,Paal,Europan cephalopod,oomu.paal@europa.ice,4,15,2185-08-08,Platinum
+26,Nyx,Arvandi,Sentient cloud,nyx@trappist.sea,10,,2185-10-31,Gold
+27,HAL-0,,Synthetic,hal0@lagrange.st,8,7,2186-02-14,Silver
+28,Ilunga,Mbeki,Human,ilunga.mbeki@proxima.ac,9,,2186-05-20,Bronze
+29,Ana,Sokolova,Human,ana.sokolova@ganymede.gal,6,,2186-09-09,Silver
+30,Glorp,Vexx,Silicoid,glorp.vexx@gliese.rock,13,,2187-01-01,Bronze

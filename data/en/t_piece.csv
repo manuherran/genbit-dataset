@@ -1,0 +1,27 @@
+id,name,material,supplier_id,cost
+1,Quantum quartz crystal,Quartz,3,85.00
+2,Superconducting coil,Niobium-titanium,3,240.00
+3,Tachyon capacitor,Exotic,3,3900.00
+4,Topological qubit,Semiconductor,3,250.00
+5,Ion trap,Silicon,3,650.00
+6,Cryogenic chip,Silicon,1,310.00
+7,Titanium casing,Titanium,5,45.00
+8,Metamaterial lens,Metamaterial,2,190.00
+9,Cold fusion battery,Palladium,6,520.00
+10,Plasma emitter,Tungsten,6,410.00
+11,Graphene spring,Graphene,7,12.00
+12,Pine cone magazine,Recycled wood,5,6.50
+13,Liquid nitrogen (litre),Nitrogen,1,1.20
+14,Synthetic viral vector,Biological,4,95.00
+15,Cas-Ω enzyme,Biological,4,60.00
+16,Stem cell culture,Biological,4,480.00
+17,Bio-ink,Biological,8,220.00
+18,Nano-assembler,Carbon,9,0.35
+19,Neural electrode,Platinum-iridium,10,140.00
+20,Photonic neuron sensor,Photonic,10,360.00
+21,Graphene membrane,Graphene,7,60.00
+22,Moss spores,Biological,8,0.10
+23,Gravity field generator,Exotic,6,2700.00
+24,Entanglement antenna,Semiconductor,3,18.00
+25,Unobtainium screw,Unobtainium,5,9999.00
+26,Antimatter core (1 ng),Antimatter,,15000.00

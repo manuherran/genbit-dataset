@@ -1,0 +1,18 @@
+id,siglas,nombre,sector,id_planeta_sede,anio_fundacion,id_matriz,num_empleados
+1,GB,GenBit Corporation,Conglomerado científico,1,2142,,52000
+2,AA,Astro Alleles,Genética,3,2151,1,1800
+3,AE,Antimatter Engineering,Energía,2,2149,1,4300
+4,CRS,Cryo-Regeneration Systems,Medicina,1,2155,1,950
+5,EAF,Exo-Agriculture Foundation,Astrobiología,3,2160,,610
+6,EN,Entangled Networks,Física cuántica,1,2147,1,7200
+7,IA,Interstellar Analytics,Datos y computación,8,2163,,380
+8,IASP,Institute for Advanced Spin Physics,Física cuántica,1,2139,,1200
+9,OPIS,Orbital Proteomics & Imaging Systems,Biotecnología,8,2166,1,540
+10,PETRL,Planetary Embryo & Tissue Research Lab,Medicina,9,2171,1,290
+11,QRI,Quantum Resonance Institute,Neurociencia,1,2158,,160
+12,RS,Replicator Solutions,Fabricación,7,2152,1,3100
+13,SFE,Stellar Fusion Energy,Energía,5,2145,,8800
+14,SR,Synthetic Ribosomes,Genética,3,2168,1,720
+15,TFOI,Terraforming & Ocean Initiatives,Terraformación,3,2150,1,5600
+16,TNF,Tachyon Navigation Foundry,Propulsión,2,2161,1,2050
+17,WS,Wormhole Shipping,Logística,9,2170,,11900

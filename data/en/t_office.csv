@@ -1,0 +1,21 @@
+id,name,company_id,planet_id,city,capacity,opening_date
+1,Headquarters,1,1,Ginebra,4000,2142-03-01
+2,Orbital lab,1,8,Anillo B,350,2158-06-15
+3,Olympus Campus,2,3,Olympus Mons,900,2152-01-10
+4,Antimatter plant,3,2,Cráter Shackleton,600,2150-09-20
+5,Cryogenic clinic,4,1,Reikiavik,220,2156-02-02
+6,Valles Greenhouse,5,3,Valles Marineris,180,2161-04-30
+7,Quantum node,6,1,Tokio,1500,2148-11-11
+8,Data observatory,7,8,Anillo C,120,2164-07-07
+9,Spin lab,8,1,Zúrich,400,2140-05-05
+10,Imaging station,9,8,Anillo A,160,2167-03-03
+11,Proxima biobank,10,9,Puerto Centauri,90,2172-08-18
+12,Resonance institute,11,1,Barcelona,140,2158-10-01
+13,Replicator factory,12,7,Occator,1300,2153-12-12
+14,Kraken reactor,13,5,Kraken Mare,700,2146-01-20
+15,Ribosome lab,14,3,Ciudad Bradbury,210,2169-02-14
+16,Ocean base,15,4,Conamara Chaos,260,2162-06-21
+17,Tachyon shipyard,16,2,Base Armstrong,800,2162-09-09
+18,Wormhole terminal,17,9,Puerto Centauri,2500,2171-01-01
+19,Ganymede sales office,1,6,Nueva Galilea,45,2175-05-25
+20,TRAPPIST outpost,1,10,Arrecife Uno,30,2181-07-04

@@ -1,0 +1,27 @@
+id,name,product_line_id,project_id,price,stock,launch_date,weight_kg
+1,Freeze Ray,1,,1299.99,140,2178-02-01,2.40
+2,Pine Cone Launcher,1,,349.50,610,2179-06-15,3.10
+3,Pocket Plasma Shield,1,,2499.00,75,2183-01-20,0.80
+4,Zero-G Capture Net,1,,189.90,1200,2180-10-10,1.20
+5,Short-Range Teleporter,2,3,149999.00,6,2185-03-01,340.00
+6,Desktop Quantum Computer,2,6,38500.00,22,2184-09-09,18.50
+7,Entanglement Keychain (pair),2,3,59.99,4800,2182-02-14,0.05
+8,True Random Number Generator,2,,990.00,300,2177-07-07,0.30
+9,Quantum Vision Goggles,2,6,3150.00,90,2186-04-04,0.25
+10,Home CRISPR-Ω Kit,3,4,899.00,520,2182-08-01,1.50
+11,Handheld DNA Sequencer,3,4,1599.00,260,2181-05-05,0.45
+12,Synthetic Pet (Schrödinger's Cat),3,2,4999.00,40,2186-12-24,4.20
+13,Compact Warp Drive,4,7,2500000.00,2,2188-01-01,8200.00
+14,Wormhole Compass,4,12,12800.00,35,2185-07-07,1.10
+15,Graphene Solar Sails,4,,7600.00,60,2179-09-09,25.00
+16,Martian Moss Seeds,5,5,24.90,25000,2172-03-21,0.10
+17,Titan Nitrogen-Fixing Bacteria,5,5,310.00,900,2178-11-11,0.50
+18,Artificial Photosynthesis Panels,5,8,5400.00,140,2183-05-01,40.00
+19,Telomere Regeneration Patch,6,10,780.00,350,2187-02-02,0.02
+20,Cryosleep Pod,6,9,96000.00,12,2183-11-11,650.00
+21,3D-Printed Kidney,6,2,21000.00,18,2184-06-06,0.30
+22,Repair Nanobots (dose),6,2,1250.00,700,2185-10-10,0.01
+23,Neuron-Counting Helmet,7,1,8900.00,45,2186-06-01,1.80
+24,Brain-Cloud Interface,7,11,17500.00,30,2187-09-09,0.15
+25,Xenolinguistic Translator,7,,2200.00,110,2184-04-04,0.20
+26,Antimatter Toaster,2,15,666.00,0,2181-03-01,3.00

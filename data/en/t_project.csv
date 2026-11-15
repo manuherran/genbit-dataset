@@ -1,0 +1,16 @@
+id,name,area,company_id,lead_employee_id,start_date,end_date,budget,status
+1,Neuron Counting,Neuroscience,11,6,2179-01-10,,4200000.00,Active
+2,Cell Reprogramming,Genetics,14,4,2177-05-01,,12500000.00,Active
+3,Quantum Teleportation,Quantum physics,6,5,2172-02-14,2184-12-20,88000000.00,Completed
+4,CRISPR-Ω Gene Editing,Genetics,2,4,2174-09-09,2182-06-30,23000000.00,Completed
+5,Mars Terraforming,Astrobiology,15,15,2165-01-01,,950000000.00,Active
+6,Topological Quantum Computer,Quantum physics,8,12,2178-03-03,,61000000.00,Active
+7,Warp Drive,Astrophysics,16,8,2180-07-07,,420000000.00,On hold
+8,Artificial Photosynthesis,Bioengineering,5,15,2176-04-22,2183-04-22,9700000.00,Completed
+9,Human Cryopreservation,Medicine,4,14,2175-11-11,,31000000.00,Active
+10,Telomere Regeneration,Medicine,10,14,2181-02-02,,18400000.00,Active
+11,Connectome Map,Neuroscience,9,6,2183-06-01,,7300000.00,Active
+12,Wormhole Atlas,Astrophysics,17,18,2182-01-01,,140000000.00,Active
+13,Wild Suffering Reduction,Ethics,5,9,2184-03-15,,2100000.00,Active
+14,Xenolinguistics,Neuroscience,7,,2189-01-01,,3000000.00,Planned
+15,Antimatter Toaster,Energy,3,5,2181-01-01,2181-03-01,500000.00,Cancelled

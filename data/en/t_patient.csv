@@ -1,0 +1,21 @@
+id,first_name,last_name,birth_date,species,blood_type,planet_id,project_id,admission_date,status
+1,Julio,Cabrera,2121-05-02,Human,0+,1,9,2180-01-12,Cryopreserved
+2,Lucius,Caviola,2156-09-14,Human,A+,1,1,2182-03-03,In treatment
+3,Bruno,Contestabile,2140-02-28,Human,B-,9,10,2182-07-19,In treatment
+4,Oscar,Huerta,2149-12-01,Human,0-,1,2,2181-11-11,Observation
+5,Michael,Dello-Iacovo,2160-06-06,Human,AB+,3,1,2183-02-02,Discharged
+6,Michael Edward,Johnson,2158-03-17,Human,A-,1,11,2184-08-08,In treatment
+7,Robert,Daoust,2130-10-10,Human,0+,2,9,2179-12-24,Cryopreserved
+8,Lukas,Gloor,2162-01-21,Human,B+,8,10,2185-05-05,In treatment
+9,Andrés,Gómez-Emilsson,2161-07-30,Human,A+,1,1,2183-09-09,Observation
+10,Nely,Watson,2155-04-04,Human,AB-,3,2,2184-01-15,In treatment
+11,Oomu,Paal,2090-01-01,Europan cephalopod,,4,2,2186-06-30,Observation
+12,Teodora,Ilić,2170-11-11,Human,0+,3,10,2186-02-27,In treatment
+13,Raúl,Benítez,2148-08-08,Human,A+,1,9,2185-12-12,Cryopreserved
+14,Grommk,Ul,2105-05-05,Silicoid,,7,2,2187-01-20,Observation
+15,Sofía,Lindahl,2172-02-02,Human,B+,9,10,2187-03-14,In treatment
+16,Amara,Nwosu,2166-06-16,Human,0-,3,1,2187-05-05,Discharged
+17,Haruto,Mori,2159-09-19,Human,A-,1,11,2187-08-01,In treatment
+18,Elif,Kaya,2164-12-12,Human,AB+,8,,2188-01-10,Observation
+19,Krrr'tik,,2140-04-04,Tau Cetian insectoid,,12,2,2188-02-29,In treatment
+20,Bea,Montalbán,2175-07-07,Human,0+,1,10,2188-04-04,In treatment
