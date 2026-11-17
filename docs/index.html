@@ -1,114 +1,28 @@
 <!doctype html>
-<html lang="es">
+<html lang="en">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Genbit — Dataset</title>
-<meta name="description" content="Dataset de Genbit: base de datos relacional de ejemplo (CSV + SQL, español e inglés) con genética, física cuántica, planetas, pedidos y pagos. Explora las tablas y ejecuta SQL en el navegador.">
+<meta name="description" content="The Genbit dataset: a sample relational database (CSV + SQL, English and Spanish) with genetics, quantum physics, planets, orders and payments. Browse the tables and run SQL in your browser.">
+<link rel="canonical" href="https://genbit.com/dataset/">
+<link rel="alternate" hreflang="en" href="https://genbit.com/dataset/">
+<link rel="alternate" hreflang="es" href="https://genbit.com/dataset/es/">
+<link rel="alternate" hreflang="x-default" href="https://genbit.com/dataset/">
+<script>
+// Idioma, igual que gaiabasic.com: manda la elección guardada con el botón EN/ES y, si no la hay,
+// el idioma preferido del navegador. Las páginas en inglés envían a /es/ a quien prefiere español;
+// las de /es/ nunca redirigen, así que un enlace a /es/ siempre se abre en español.
+(function(){var l=null;try{l=localStorage.getItem("genbit-lang")}catch(e){}
+if(l!=="es"&&l!=="en"){var p=navigator.languages||[navigator.language||""];l=String(p[0]||"").toLowerCase().indexOf("es")===0?"es":"en"}
+if(document.documentElement.lang==="en"&&l==="es"){var a=location.pathname,c=a.lastIndexOf("/")+1,f=a.slice(c);
+if(f==="index.html"&&location.protocol!=="file:")f="";if(f===""&&location.protocol==="file:")f="index.html";
+location.replace(a.slice(0,c)+"es/"+f+location.search+location.hash)}})();
+</script>
 <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='6' fill='%2305060f'/><path d='M8 6q8 10 16 0M8 26q8-10 16 0M8 6q8 10 16 20M24 6q-8 10-16 20' stroke='%2322e4ff' stroke-width='2.5' fill='none'/></svg>">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@500;700&family=Space+Grotesk:wght@400;500;700&family=JetBrains+Mono:wght@400;600&display=swap">
-<style>
-:root{
-  --bg:#05060f; --bg2:#0b0e24; --panel:#10142e; --line:#232a5c;
-  --txt:#e8ebff; --mut:#9aa3d6;
-  --cian:#22e4ff; --magenta:#ff3dbb; --ambar:#ffb627; --acido:#9dff3a;
-  --display:"Chakra Petch",system-ui,sans-serif;
-  --body:"Space Grotesk",system-ui,sans-serif;
-  --mono:"JetBrains Mono",ui-monospace,monospace;
-}
-*{box-sizing:border-box;margin:0;padding:0}
-html{scroll-behavior:smooth}
-body{background:var(--bg);color:var(--txt);font-family:var(--body);line-height:1.6;overflow-x:hidden}
-#stars{position:fixed;inset:0;z-index:0;pointer-events:none}
-main,header,footer{position:relative;z-index:1}
-a{color:var(--cian)}
-.wrap{max-width:1120px;margin:0 auto;padding:0 16px}
-@media(min-width:600px){.wrap{padding:0 24px}}
-
-nav{position:sticky;top:0;z-index:10;background:rgba(5,6,15,.78);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
-nav .wrap{display:flex;align-items:center;gap:20px;height:60px}
-.logo{font-family:var(--display);font-weight:700;font-size:1.35rem;letter-spacing:.06em;color:var(--txt);text-decoration:none;white-space:nowrap}
-.logo b{color:var(--cian)} .logo i{font-style:normal;color:var(--magenta)}
-.logo small{font-family:var(--mono);font-size:.7rem;color:var(--acido);letter-spacing:.1em;margin-left:8px;font-weight:400}
-nav ul{display:flex;gap:22px;list-style:none;font-size:.9rem;margin-left:auto}
-nav ul a{color:var(--mut);text-decoration:none} nav ul a:hover{color:var(--txt)}
-.lang{font-family:var(--mono);font-size:.78rem;background:transparent;border:1px solid var(--line);color:var(--txt);border-radius:3px;padding:4px 10px;cursor:pointer}
-.lang:hover{border-color:var(--cian)}
-@media(max-width:760px){nav ul{display:none}.lang{margin-left:auto}}
-
-.hero{padding-top:70px;padding-bottom:50px}
-.kicker{font-family:var(--mono);font-size:.8rem;color:var(--acido);letter-spacing:.12em;text-transform:uppercase}
-h1{font-family:var(--display);font-size:clamp(2.3rem,6vw,4.2rem);line-height:1.02;margin:14px 0 18px}
-h1 .g{background:linear-gradient(90deg,var(--cian),var(--magenta));-webkit-background-clip:text;background-clip:text;color:transparent}
-.lead{font-size:1.12rem;color:var(--mut);max-width:44em}
-.ctas{display:flex;flex-wrap:wrap;gap:14px;margin-top:28px}
-.btn{display:inline-flex;align-items:center;gap:10px;font-family:var(--display);font-weight:700;letter-spacing:.04em;padding:11px 20px;border-radius:4px;text-decoration:none;border:2px solid var(--cian);color:var(--bg);background:var(--cian);box-shadow:4px 4px 0 var(--magenta);transition:transform .15s,box-shadow .15s;cursor:pointer;font-size:.95rem}
-.btn:hover{transform:translate(-2px,-2px);box-shadow:6px 6px 0 var(--magenta)}
-.btn.ghost{background:transparent;color:var(--cian);box-shadow:none}
-.btn.ghost:hover{transform:none;background:rgba(34,228,255,.08)}
-.btn.sm{padding:7px 14px;font-size:.85rem;box-shadow:none}
-
-.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:14px;margin-top:40px}
-.stat{background:var(--panel);border-left:4px solid var(--magenta);padding:16px 18px;border-radius:4px}
-.stat b{display:block;font-family:var(--display);font-size:1.9rem;color:var(--txt)}
-.stat small{color:var(--mut);font-size:.82rem}
-.stat:nth-child(2){border-color:var(--cian)} .stat:nth-child(3){border-color:var(--ambar)} .stat:nth-child(4){border-color:var(--acido)}
-
-section{padding:70px 0;border-top:1px solid var(--line);scroll-margin-top:60px}
-.sec-head{display:flex;align-items:baseline;gap:16px;margin-bottom:12px;flex-wrap:wrap}
-.sec-num{font-family:var(--mono);color:var(--ambar);font-size:.85rem}
-h2{font-family:var(--display);font-size:clamp(1.7rem,3.6vw,2.4rem);line-height:1.1}
-.sub{color:var(--mut);margin-bottom:28px;max-width:52em}
-.cols{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:22px}
-.card{background:var(--panel);border:2px solid var(--line);border-radius:8px;padding:22px;transition:border-color .2s}
-.card:hover{border-color:var(--cian)}
-.card h3{font-family:var(--display);font-size:1.2rem;margin-bottom:6px}
-.card p{color:var(--mut);font-size:.95rem;margin-bottom:16px}
-.card .row{display:flex;flex-wrap:wrap;gap:10px}
-.lab-cian{border-top:4px solid var(--cian)} .lab-mag{border-top:4px solid var(--magenta)} .lab-amb{border-top:4px solid var(--ambar)}
-
-.er{background:var(--panel);border:2px solid var(--line);border-radius:8px;padding:14px;overflow:auto;max-height:760px}
-.er svg{width:100%;height:auto;min-width:900px}
-
-.explorer{display:grid;grid-template-columns:250px 1fr;gap:18px;min-height:420px}
-.tlist{background:var(--panel);border:2px solid var(--line);border-radius:8px;padding:6px;max-height:640px;overflow:auto}
-.tlist button{display:flex;justify-content:space-between;width:100%;text-align:left;background:none;border:0;color:var(--mut);padding:7px 10px;border-radius:4px;font-family:var(--mono);font-size:.82rem;cursor:pointer}
-.tlist button small{color:#4a5390}
-.tlist button:hover{background:var(--bg2);color:var(--txt)}
-.tlist button.on{background:var(--bg2);color:var(--cian)}
-.tlist button.on small{color:var(--magenta)}
-.tview{min-width:0}
-.tview .desc{color:var(--mut);margin-bottom:10px}
-.chips{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:12px}
-.chip{font-family:var(--mono);font-size:.72rem;border:1px solid var(--line);border-radius:20px;padding:2px 9px;color:var(--mut)}
-.chip.pk{border-color:var(--ambar);color:var(--ambar)}
-.chip.fk{border-color:var(--acido);color:var(--acido)}
-.tablebox{background:#03040b;border:1px solid var(--line);border-radius:8px;overflow:auto;max-height:520px}
-table.data{border-collapse:collapse;width:100%;font-family:var(--mono);font-size:.78rem}
-table.data th,table.data td{padding:6px 12px;border-bottom:1px solid #151a3d;white-space:nowrap;text-align:left}
-table.data th{position:sticky;top:0;background:var(--panel);color:var(--cian);font-weight:600}
-table.data td.num{text-align:right;color:var(--ambar);font-variant-numeric:tabular-nums}
-table.data td.null{color:var(--magenta);opacity:.7;font-style:italic}
-table.data tr:hover td{background:#0b0e24}
-
-.term{background:#03040b;border:1px solid var(--line);border-radius:8px;overflow:hidden}
-.term .bar{background:var(--panel);padding:8px 12px;color:var(--mut);display:flex;gap:10px;align-items:center;flex-wrap:wrap;font-family:var(--mono);font-size:.8rem}
-.term .bar i{width:10px;height:10px;border-radius:50%;background:var(--line);display:inline-block}
-.term .bar .dots{display:flex;gap:6px}
-.term textarea{display:block;width:100%;min-height:200px;background:transparent;color:var(--acido);border:0;padding:16px;font-family:var(--mono);font-size:.82rem;line-height:1.6;resize:vertical;outline:none}
-select{background:var(--bg);color:var(--txt);border:1px solid var(--line);border-radius:3px;padding:5px 8px;font-family:var(--body);font-size:.85rem;max-width:100%;flex:1 1 260px}
-.qmsg{font-family:var(--mono);font-size:.78rem;color:var(--mut)}
-.qmsg.err{color:var(--magenta)}
-.play{display:grid;gap:14px}
-.msg{padding:14px;color:var(--mut);font-family:var(--mono);font-size:.8rem}
-.notice{margin-top:30px;padding:16px 20px;border:1px solid var(--ambar);border-radius:6px;color:var(--ambar);font-size:.9rem;background:rgba(255,182,39,.06)}
-
-footer{border-top:1px solid var(--line);padding:40px 0;color:var(--mut);font-size:.85rem}
-footer .wrap{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
-@media(max-width:760px){.explorer{grid-template-columns:1fr}.tlist{max-height:220px}}
-@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
-</style>
+<link rel="stylesheet" href="app.css">
 </head>
 <body>
 <canvas id="stars" aria-hidden="true"></canvas>
@@ -117,75 +31,75 @@ footer .wrap{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
 <nav><div class="wrap">
   <a class="logo" href="https://genbit.com/"><b>GEN</b><i>BIT</i><small>DATASET</small></a>
   <ul>
-    <li><a href="https://genbit.com/" data-i18n="nav_home">Inicio</a></li>
-    <li><a href="#descargas" data-i18n="nav_dl">Descargas</a></li>
-    <li><a href="#modelo" data-i18n="nav_model">Modelo</a></li>
-    <li><a href="#tablas" data-i18n="nav_explore">Tablas</a></li>
-    <li><a href="#sql" data-i18n="nav_sql">SQL en vivo</a></li>
+    <li><a href="https://genbit.com/" data-i18n="nav_home">Home</a></li>
+    <li><a href="#descargas" data-i18n="nav_dl">Downloads</a></li>
+    <li><a href="#modelo" data-i18n="nav_model">Model</a></li>
+    <li><a href="#tablas" data-i18n="nav_explore">Tables</a></li>
+    <li><a href="#sql" data-i18n="nav_sql">Live SQL</a></li>
   </ul>
-  <button class="lang" id="langBtn" aria-label="Language">EN</button>
+  <a class="lang" href="es/" hreflang="es" lang="es" title="Leer en español">ES</a>
 </div></nav>
 </header>
 
 <main>
 <div class="wrap hero">
-  <div class="kicker" data-i18n="kicker">Registro abierto · CSV + SQL · ES / EN</div>
-  <h1 data-i18n-html="h1">El dataset de <span class="g">Genbit</span></h1>
-  <p class="lead" data-i18n="lead">Todo lo que hace Genbit queda registrado: tripulación, clientes de todo el sistema solar, proyectos de genética y física cuántica, productos, pedidos, pagos y devoluciones. Aquí tienes ese registro como base de datos relacional para aprender SQL, análisis de datos o machine learning.</p>
+  <div class="kicker" data-i18n="kicker">Open log · CSV + SQL · ES / EN</div>
+  <h1 data-i18n-html="h1">The <span class="g">Genbit</span> dataset</h1>
+  <p class="lead" data-i18n="lead">Everything Genbit does gets logged: crew, customers from all over the solar system, genetics and quantum physics projects, products, orders, payments and refunds. Here is that log as a relational database to learn SQL, data analysis or machine learning.</p>
   <div class="ctas">
-    <a class="btn" href="#descargas" data-i18n="cta_dl">Descargar</a>
-    <a class="btn ghost" href="#sql" data-i18n="cta_sql">Probar SQL aquí</a>
+    <a class="btn" href="#descargas" data-i18n="cta_dl">Download</a>
+    <a class="btn ghost" href="#sql" data-i18n="cta_sql">Try SQL here</a>
     <a class="btn ghost" href="https://github.com/manuherran/genbit-dataset">GitHub ↗</a>
   </div>
   <div class="stats" id="stats"></div>
 </div>
 
 <section id="descargas"><div class="wrap">
-  <div class="sec-head"><span class="sec-num">01</span><h2 data-i18n="dl_title">Descargas</h2></div>
-  <p class="sub" data-i18n="dl_sub">Los mismos datos en dos idiomas: cambian los nombres de tablas, columnas y los textos (Tierra / Earth, Entregado / Delivered…). Los identificadores numéricos coinciden.</p>
+  <div class="sec-head"><span class="sec-num">01</span><h2 data-i18n="dl_title">Downloads</h2></div>
+  <p class="sub" data-i18n="dl_sub">Same data in two languages: table names, column names and text values change (Tierra / Earth, Entregado / Delivered…). Numeric ids match.</p>
   <div class="cols">
-    <article class="card lab-cian"><h3>Español</h3><p data-i18n="dl_es">Tablas t_cliente, t_pedido, t_planeta…</p>
-      <div class="row"><a class="btn sm" href="downloads/genbit_es_csv.zip">CSV</a><a class="btn sm ghost" href="downloads/genbit_es_sql.zip">SQL</a><a class="btn sm ghost" href="db/genbit_es.sqlite">SQLite</a></div></article>
-    <article class="card lab-mag"><h3>English</h3><p data-i18n="dl_en">Tablas t_customer, t_order, t_planet…</p>
+    <article class="card lab-cian"><h3>English</h3><p data-i18n="dl_en">Tables t_customer, t_order, t_planet…</p>
       <div class="row"><a class="btn sm" href="downloads/genbit_en_csv.zip">CSV</a><a class="btn sm ghost" href="downloads/genbit_en_sql.zip">SQL</a><a class="btn sm ghost" href="db/genbit_en.sqlite">SQLite</a></div></article>
-    <article class="card lab-amb"><h3 data-i18n="dl_fmt_t">Formatos</h3><p data-i18n="dl_fmt">CSV en UTF-8 con cabecera y separador coma (NULL = celda vacía). Scripts para MySQL 8 / MariaDB y SQLite, y 15 consultas de ejemplo.</p>
-      <div class="row"><a class="btn sm ghost" href="https://github.com/manuherran/genbit-dataset" data-i18n="dl_browse">Ver en GitHub ↗</a></div></article>
+    <article class="card lab-mag"><h3>Español</h3><p data-i18n="dl_es">Tables t_cliente, t_pedido, t_planeta…</p>
+      <div class="row"><a class="btn sm" href="downloads/genbit_es_csv.zip">CSV</a><a class="btn sm ghost" href="downloads/genbit_es_sql.zip">SQL</a><a class="btn sm ghost" href="db/genbit_es.sqlite">SQLite</a></div></article>
+    <article class="card lab-amb"><h3 data-i18n="dl_fmt_t">Formats</h3><p data-i18n="dl_fmt">UTF-8 CSV with header row and comma separator (NULL = empty cell). Scripts for MySQL 8 / MariaDB and SQLite, plus 15 example queries.</p>
+      <div class="row"><a class="btn sm ghost" href="https://github.com/manuherran/genbit-dataset" data-i18n="dl_browse">View on GitHub ↗</a></div></article>
   </div>
 </div></section>
 
 <section id="modelo"><div class="wrap">
-  <div class="sec-head"><span class="sec-num">02</span><h2 data-i18n="model_title">Modelo de datos</h2></div>
-  <p class="sub" data-i18n="model_sub">Relaciones 1-N y N-M (asignaciones, lista de materiales), una relación reflexiva (empleado → jefe), claves compuestas y NULLs a propósito para practicar LEFT JOIN.</p>
-  <div class="er" id="er"><p class="msg" data-i18n="loading">Cargando…</p></div>
+  <div class="sec-head"><span class="sec-num">02</span><h2 data-i18n="model_title">Data model</h2></div>
+  <p class="sub" data-i18n="model_sub">1-N and N-M relationships (assignments, bill of materials), a self-reference (employee → manager), composite keys and deliberate NULLs to practise LEFT JOIN.</p>
+  <div class="er" id="er"><p class="msg" data-i18n="loading">Loading…</p></div>
 </div></section>
 
 <section id="tablas"><div class="wrap">
-  <div class="sec-head"><span class="sec-num">03</span><h2 data-i18n="explore_title">Las tablas</h2></div>
-  <p class="sub" data-i18n="explore_sub">Elige una tabla para ver su descripción, sus columnas y todos sus datos.</p>
+  <div class="sec-head"><span class="sec-num">03</span><h2 data-i18n="explore_title">The tables</h2></div>
+  <p class="sub" data-i18n="explore_sub">Pick a table to see its description, columns and all of its data.</p>
   <div class="explorer">
     <div class="tlist" id="tlist"></div>
     <div class="tview">
       <p class="desc" id="tdesc"></p>
       <div class="chips" id="tcols"></div>
-      <div class="tablebox" id="tdata"><p class="msg" data-i18n="loading">Cargando…</p></div>
+      <div class="tablebox" id="tdata"><p class="msg" data-i18n="loading">Loading…</p></div>
     </div>
   </div>
 </div></section>
 
 <section id="sql"><div class="wrap">
-  <div class="sec-head"><span class="sec-num">04</span><h2 data-i18n="sql_title">SQL en vivo</h2></div>
-  <p class="sub" data-i18n="sql_sub">La base de datos completa se carga en tu navegador (SQLite en WebAssembly); nada sale de tu ordenador. Elige un ejemplo o escribe tu consulta. Ctrl+Enter para ejecutar.</p>
+  <div class="sec-head"><span class="sec-num">04</span><h2 data-i18n="sql_title">Live SQL</h2></div>
+  <p class="sub" data-i18n="sql_sub">The whole database is loaded in your browser (SQLite in WebAssembly); nothing leaves your computer. Pick an example or write your own query. Ctrl+Enter to run.</p>
   <div class="play">
     <div class="term">
       <div class="bar"><span class="dots"><i></i><i></i><i></i></span>
         <select id="qsel" aria-label="Examples"></select>
-        <button class="btn sm" id="run" data-i18n="run">Ejecutar ▶</button>
+        <button class="btn sm" id="run" data-i18n="run">Run ▶</button>
         <span class="qmsg" id="qmsg"></span></div>
       <textarea id="qtext" spellcheck="false"></textarea>
     </div>
     <div class="tablebox" id="qout"></div>
   </div>
-  <p class="notice" data-i18n="notice">Genbit, su tripulación, sus clientes y sus empresas son ficticios. Todos los datos son sintéticos.</p>
+  <p class="notice" data-i18n="notice">Genbit, its crew, customers and companies are fictional. All data is synthetic.</p>
 </div></section>
 </main>
 
@@ -197,141 +111,6 @@ footer .wrap{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
 <script src="meta.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/sql.js/1.10.3/sql-wasm.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/mermaid/10.9.1/mermaid.min.js"></script>
-<script>
-const I18N = {
-  es: {nav_home:"Inicio",nav_dl:"Descargas",nav_model:"Modelo",nav_explore:"Tablas",nav_sql:"SQL en vivo",
-    kicker:"Registro abierto · CSV + SQL · ES / EN",h1:'El dataset de <span class="g">Genbit</span>',
-    lead:"Todo lo que hace Genbit queda registrado: tripulación, clientes de todo el sistema solar, proyectos de genética y física cuántica, productos, pedidos, pagos y devoluciones. Aquí tienes ese registro como base de datos relacional para aprender SQL, análisis de datos o machine learning.",
-    cta_dl:"Descargar",cta_sql:"Probar SQL aquí",
-    dl_title:"Descargas",dl_sub:"Los mismos datos en dos idiomas: cambian los nombres de tablas, columnas y los textos (Tierra / Earth, Entregado / Delivered…). Los identificadores numéricos coinciden.",
-    dl_es:"Tablas t_cliente, t_pedido, t_planeta…",dl_en:"Tablas t_customer, t_order, t_planet…",dl_fmt_t:"Formatos",
-    dl_fmt:"CSV en UTF-8 con cabecera y separador coma (NULL = celda vacía). Scripts para MySQL 8 / MariaDB y SQLite, y 15 consultas de ejemplo.",
-    dl_browse:"Ver en GitHub ↗",model_title:"Modelo de datos",
-    model_sub:"Relaciones 1-N y N-M (asignaciones, lista de materiales), una relación reflexiva (empleado → jefe), claves compuestas y NULLs a propósito para practicar LEFT JOIN.",
-    explore_title:"Las tablas",explore_sub:"Elige una tabla para ver su descripción, sus columnas y todos sus datos.",
-    sql_title:"SQL en vivo",sql_sub:"La base de datos completa se carga en tu navegador (SQLite en WebAssembly); nada sale de tu ordenador. Elige un ejemplo o escribe tu consulta. Ctrl+Enter para ejecutar.",
-    run:"Ejecutar ▶",loading:"Cargando…",notice:"Genbit, su tripulación, sus clientes y sus empresas son ficticios. Todos los datos son sintéticos.",
-    tables:"tablas",rows:"filas",langs:"idiomas",queries:"consultas de ejemplo",
-    ms:(n,t)=>`${n} filas · ${t} ms`,noRows:"La consulta no devolvió filas.",ok:"Hecho.",custom:"— escribe tu propia consulta —"},
-  en: {nav_home:"Home",nav_dl:"Downloads",nav_model:"Model",nav_explore:"Tables",nav_sql:"Live SQL",
-    kicker:"Open log · CSV + SQL · ES / EN",h1:'The <span class="g">Genbit</span> dataset',
-    lead:"Everything Genbit does gets logged: crew, customers from all over the solar system, genetics and quantum physics projects, products, orders, payments and refunds. Here is that log as a relational database to learn SQL, data analysis or machine learning.",
-    cta_dl:"Download",cta_sql:"Try SQL here",
-    dl_title:"Downloads",dl_sub:"Same data in two languages: table names, column names and text values change (Tierra / Earth, Entregado / Delivered…). Numeric ids match.",
-    dl_es:"Tables t_cliente, t_pedido, t_planeta…",dl_en:"Tables t_customer, t_order, t_planet…",dl_fmt_t:"Formats",
-    dl_fmt:"UTF-8 CSV with header row and comma separator (NULL = empty cell). Scripts for MySQL 8 / MariaDB and SQLite, plus 15 example queries.",
-    dl_browse:"View on GitHub ↗",model_title:"Data model",
-    model_sub:"1-N and N-M relationships (assignments, bill of materials), a self-reference (employee → manager), composite keys and deliberate NULLs to practise LEFT JOIN.",
-    explore_title:"The tables",explore_sub:"Pick a table to see its description, columns and all of its data.",
-    sql_title:"Live SQL",sql_sub:"The whole database is loaded in your browser (SQLite in WebAssembly); nothing leaves your computer. Pick an example or write your own query. Ctrl+Enter to run.",
-    run:"Run ▶",loading:"Loading…",notice:"Genbit, its crew, customers and companies are fictional. All data is synthetic.",
-    tables:"tables",rows:"rows",langs:"languages",queries:"example queries",
-    ms:(n,t)=>`${n} rows · ${t} ms`,noRows:"The query returned no rows.",ok:"Done.",custom:"— write your own query —"}
-};
-const store = {get(k){try{return localStorage.getItem(k)}catch(e){return null}}, set(k,v){try{localStorage.setItem(k,v)}catch(e){}}};
-let lang = new URLSearchParams(location.search).get("lang") || store.get("genbit-lang") || ((navigator.language||"es").startsWith("es") ? "es" : "en");
-if (!I18N[lang]) lang = "es";
-const dbs = {}; let SQL = null, currentTable = 0;
-const $ = id => document.getElementById(id);
-const esc = s => String(s).replace(/[&<>"]/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
-
-// Estrellas (mismo fondo que genbit.com)
-(function(){
-  var c=$('stars'),x=c.getContext('2d'),s=[],W,H;
-  var cols=['#ffffff','#22e4ff','#ff3dbb','#ffb627'];
-  function size(){W=c.width=innerWidth;H=c.height=innerHeight;s=[];
-    for(var i=0;i<Math.round(W*H/5000);i++)s.push({x:Math.random()*W,y:Math.random()*H,r:Math.random()*1.5+.2,d:Math.random()*.6+.1,c:Math.random()<.9?cols[0]:cols[1+Math.floor(Math.random()*3)],t:Math.random()*6});}
-  var reduce=matchMedia('(prefers-reduced-motion: reduce)').matches;
-  function draw(ts){x.clearRect(0,0,W,H);var sc=scrollY;
-    for(var i=0;i<s.length;i++){var p=s[i],yy=((p.y-sc*p.d*.3)%H+H)%H;
-      x.globalAlpha=.5+.5*Math.sin(ts/900+p.t);x.fillStyle=p.c;x.beginPath();x.arc(p.x,yy,p.r,0,6.3);x.fill();}
-    if(!reduce)requestAnimationFrame(draw);}
-  addEventListener('resize',size);size();requestAnimationFrame(draw);
-  addEventListener('scroll',function(){if(reduce)requestAnimationFrame(draw);});
-})();
-
-function table(cols, rows) {
-  if (!rows.length) return `<p class="msg">${I18N[lang].noRows}</p>`;
-  let h = '<table class="data"><thead><tr>' + cols.map(c => `<th>${esc(c)}</th>`).join("") + "</tr></thead><tbody>";
-  for (const r of rows) h += "<tr>" + r.map(v => v === null ? '<td class="null">NULL</td>' :
-    `<td${typeof v === "number" ? ' class="num"' : ""}>${esc(v)}</td>`).join("") + "</tr>";
-  return h + "</tbody></table>";
-}
-
-function applyLang() {
-  const t = I18N[lang], M = window.GENBIT_META[lang];
-  document.documentElement.lang = lang;
-  $("langBtn").textContent = lang === "es" ? "EN" : "ES";
-  document.querySelectorAll("[data-i18n]").forEach(el => el.textContent = t[el.dataset.i18n]);
-  document.querySelectorAll("[data-i18n-html]").forEach(el => el.innerHTML = t[el.dataset.i18nHtml]);
-  const total = M.tables.reduce((a, b) => a + b.rows, 0);
-  $("stats").innerHTML = [[M.tables.length, t.tables], [total, t.rows], [2, t.langs], [M.queries.length, t.queries]]
-    .map(([n, l]) => `<div class="stat"><b>${n.toLocaleString(lang)}</b><small>${l}</small></div>`).join("");
-  $("tlist").innerHTML = M.tables.map((tb, i) => `<button data-i="${i}"><span>${tb.name}</span><small>${tb.rows}</small></button>`).join("");
-  $("tlist").querySelectorAll("button").forEach(b => b.onclick = () => showTable(+b.dataset.i));
-  $("qsel").innerHTML = M.queries.map((q, i) => `<option value="${i}">${esc(q.title)}</option>`).join("") + `<option value="-1">${t.custom}</option>`;
-  $("qsel").value = 0; $("qtext").value = M.queries[0].sql;
-  showTable(currentTable);
-  renderER();
-  if (dbs[lang]) runQuery();
-}
-
-function showTable(i) {
-  currentTable = i;
-  const tb = window.GENBIT_META[lang].tables[i];
-  $("tlist").querySelectorAll("button").forEach(b => b.classList.toggle("on", +b.dataset.i === i));
-  $("tdesc").textContent = tb.desc;
-  $("tcols").innerHTML = tb.cols.map(c => `<span class="chip${c.pk ? " pk" : c.fk ? " fk" : ""}" title="${c.type}${c.null ? " NULL" : " NOT NULL"}">${c.pk ? "◆ " : ""}${c.name}${c.fk ? " → " + c.fk : ""}</span>`).join("");
-  const db = dbs[lang];
-  if (!db) return;
-  const r = db.exec(`SELECT * FROM ${tb.name}`)[0];
-  $("tdata").innerHTML = r ? table(r.columns, r.values) : table([], []);
-}
-
-let erSeq = 0;
-async function renderER() {
-  if (!window.mermaid) return;
-  mermaid.initialize({startOnLoad: false, theme: "base", securityLevel: "strict", er: {useMaxWidth: true},
-    themeVariables: {background: "#10142e", primaryColor: "#0b0e24", primaryBorderColor: "#22e4ff", primaryTextColor: "#e8ebff",
-      lineColor: "#9aa3d6", secondaryColor: "#10142e", tertiaryColor: "#10142e", fontFamily: "JetBrains Mono, monospace", fontSize: "13px"}});
-  try {
-    const {svg} = await mermaid.render("er" + (++erSeq), window.GENBIT_META[lang].er);
-    $("er").innerHTML = svg;
-  } catch (e) { $("er").innerHTML = `<p class="msg">${esc(e.message || e)}</p>`; }
-}
-
-function runQuery() {
-  const db = dbs[lang]; if (!db) return;
-  const t0 = performance.now();
-  try {
-    const res = db.exec($("qtext").value);
-    const ms = Math.round(performance.now() - t0);
-    const last = res[res.length - 1];
-    $("qout").innerHTML = last ? table(last.columns, last.values) : `<p class="msg">${I18N[lang].ok}</p>`;
-    $("qmsg").className = "qmsg"; $("qmsg").textContent = I18N[lang].ms(last ? last.values.length : 0, ms);
-  } catch (e) { $("qmsg").className = "qmsg err"; $("qmsg").textContent = e.message; $("qout").innerHTML = ""; }
-}
-
-async function loadDb(l) {
-  if (dbs[l]) return dbs[l];
-  const buf = await fetch(`db/genbit_${l}.sqlite`).then(r => r.arrayBuffer());
-  dbs[l] = new SQL.Database(new Uint8Array(buf));
-  return dbs[l];
-}
-
-$("langBtn").onclick = async () => {
-  lang = lang === "es" ? "en" : "es"; store.set("genbit-lang", lang);
-  if (SQL) await loadDb(lang);
-  applyLang();
-};
-$("qsel").onchange = () => { const i = +$("qsel").value; if (i >= 0) { $("qtext").value = window.GENBIT_META[lang].queries[i].sql; runQuery(); } };
-$("run").onclick = runQuery;
-$("qtext").addEventListener("keydown", e => { if ((e.ctrlKey || e.metaKey) && e.key === "Enter") { e.preventDefault(); runQuery(); } });
-
-applyLang();
-initSqlJs({locateFile: f => `https://cdnjs.cloudflare.com/ajax/libs/sql.js/1.10.3/${f}`})
-  .then(async S => { SQL = S; await loadDb(lang); showTable(currentTable); runQuery(); })
-  .catch(e => { $("tdata").innerHTML = `<p class="msg">${esc(e.message || e)}</p>`; });
-</script>
+<script src="app.js"></script>
 </body>
 </html>
